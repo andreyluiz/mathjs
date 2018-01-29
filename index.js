@@ -30,6 +30,7 @@ function create (config) {
 
   // import data types, functions, constants, expression parser, etc.
   math['import'](require('./lib/function/utils/typeof'));
+  math['import'](require('./lib/function/arithmetic'));
   math['import'](require('./lib/expression/embeddedDocs'));
   math['import'](require('./lib/expression/function/eval'));
 
