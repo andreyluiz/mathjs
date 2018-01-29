@@ -29,7 +29,9 @@ function create (config) {
   math.create = create;
 
   // import data types, functions, constants, expression parser, etc.
-  math['import'](require('./lib'));
+  math['import'](require('./lib/function/utils/typeof'));
+  math['import'](require('./lib/expression/embeddedDocs'));
+  math['import'](require('./lib/expression/function/eval'));
 
   return math;
 }
